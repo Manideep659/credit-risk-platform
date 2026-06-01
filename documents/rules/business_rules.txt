@@ -1,0 +1,62 @@
+================================================================================
+CREDIT RISK AUTOMATED BUSINESS RULES (DECISION TREE EXPLANATIONS)
+================================================================================
+Baseline Platform Default Rate: 8.07%
+Total Rules Generated: 8
+
+Rule #01 (Risk Tier: HIGH):
+IF EXT_SOURCE_2 <= 0.4598 
+AND EXT_SOURCE_3 <= 0.5362 
+AND EXT_SOURCE_3 <= 0.3116 
+THEN High Risk (Default Rate: 24.06%, n=17,005)
+--------------------------------------------------
+
+Rule #02 (Risk Tier: HIGH):
+IF EXT_SOURCE_2 > 0.4598 
+AND EXT_SOURCE_3 <= 0.3273 
+AND EXT_SOURCE_3 <= 0.2158 
+THEN High Risk (Default Rate: 15.58%, n=13,457)
+--------------------------------------------------
+
+Rule #03 (Risk Tier: HIGH):
+IF EXT_SOURCE_2 <= 0.4598 
+AND EXT_SOURCE_3 <= 0.5362 
+AND EXT_SOURCE_3 > 0.3116 
+THEN High Risk (Default Rate: 13.70%, n=47,551)
+--------------------------------------------------
+
+Rule #04 (Risk Tier: HIGH):
+IF EXT_SOURCE_2 <= 0.4598 
+AND EXT_SOURCE_3 > 0.5362 
+AND EXT_SOURCE_2 <= 0.2479 
+THEN High Risk (Default Rate: 9.89%, n=11,908)
+--------------------------------------------------
+
+Rule #05 (Risk Tier: HIGH):
+IF EXT_SOURCE_2 > 0.4598 
+AND EXT_SOURCE_3 <= 0.3273 
+AND EXT_SOURCE_3 > 0.2158 
+THEN High Risk (Default Rate: 9.49%, n=16,587)
+--------------------------------------------------
+
+Rule #06 (Risk Tier: LOW):
+IF EXT_SOURCE_2 > 0.4598 
+AND EXT_SOURCE_3 > 0.3273 
+AND EXT_SOURCE_3 <= 0.5451 
+THEN Low Risk (Default Rate: 5.92%, n=92,426)
+--------------------------------------------------
+
+Rule #07 (Risk Tier: LOW):
+IF EXT_SOURCE_2 <= 0.4598 
+AND EXT_SOURCE_3 > 0.5362 
+AND EXT_SOURCE_2 > 0.2479 
+THEN Low Risk (Default Rate: 5.62%, n=22,940)
+--------------------------------------------------
+
+Rule #08 (Risk Tier: LOW):
+IF EXT_SOURCE_2 > 0.4598 
+AND EXT_SOURCE_3 > 0.3273 
+AND EXT_SOURCE_3 > 0.5451 
+THEN Low Risk (Default Rate: 3.05%, n=85,637)
+--------------------------------------------------
+

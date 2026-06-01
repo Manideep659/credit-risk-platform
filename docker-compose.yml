@@ -1,0 +1,20 @@
+# ==============================================================================
+# APEX BANK CREDIT RISK PLATFORM - ORCHESTRATION
+# ==============================================================================
+version: '3.8'
+
+services:
+  credit-risk-platform:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: credit-risk-platform
+    ports:
+      - "8501:8501"
+    restart: unless-stopped
+    volumes:
+      # Mount the project directory as a volume for real-time code updates
+      - .:/app
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
